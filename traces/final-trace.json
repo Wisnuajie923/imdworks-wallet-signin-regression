@@ -1,0 +1,192 @@
+{
+  "case_count": 30,
+  "cases": [
+    {
+      "actual": "accepted",
+      "name": "valid_signature",
+      "pass": true
+    },
+    {
+      "actual": "rejected:nonce-consumed",
+      "name": "nonce_replay",
+      "pass": true
+    },
+    {
+      "actual": "rejected:nonce-consumed",
+      "name": "nonce_replay_explicit",
+      "pass": true
+    },
+    {
+      "actual": "rejected:wrong-signer",
+      "name": "wrong_signer",
+      "pass": true
+    },
+    {
+      "actual": "rejected:origin-mismatch",
+      "name": "origin_https://evil.local",
+      "pass": true
+    },
+    {
+      "actual": "rejected:origin-mismatch",
+      "name": "origin_https://app.local.evil",
+      "pass": true
+    },
+    {
+      "actual": "rejected:malformed-message",
+      "name": "origin_http://app.local",
+      "pass": true
+    },
+    {
+      "actual": "rejected:malformed-message",
+      "name": "origin_empty",
+      "pass": true
+    },
+    {
+      "actual": "rejected:malformed-message",
+      "name": "origin_HTTPS://app.local",
+      "pass": true
+    },
+    {
+      "actual": "accepted",
+      "name": "expiry_equal_boundary",
+      "pass": true
+    },
+    {
+      "actual": "rejected:expired",
+      "name": "expiry_one_second_past",
+      "pass": true
+    },
+    {
+      "actual": "rejected:malformed-signature",
+      "name": "malformed_empty",
+      "pass": true
+    },
+    {
+      "actual": "rejected:malformed-signature",
+      "name": "malformed_short",
+      "pass": true
+    },
+    {
+      "actual": "rejected:malformed-signature",
+      "name": "malformed_long",
+      "pass": true
+    },
+    {
+      "actual": "rejected:malformed-signature",
+      "name": "malformed_bad_v",
+      "pass": true
+    },
+    {
+      "actual": "rejected:malformed-signature",
+      "name": "malformed_zero_r",
+      "pass": true
+    },
+    {
+      "actual": "rejected:malformed-signature",
+      "name": "malformed_zero_s",
+      "pass": true
+    },
+    {
+      "actual": "rejected:wrong-signer",
+      "name": "malformed_high_s",
+      "pass": true
+    },
+    {
+      "actual": "rejected:wrong-signer",
+      "name": "tampered_message_address",
+      "pass": true
+    },
+    {
+      "actual": "rejected:wrong-signer",
+      "name": "tampered_message_nonce",
+      "pass": true
+    },
+    {
+      "actual": "rejected:origin-mismatch",
+      "name": "tampered_message_origin",
+      "pass": true
+    },
+    {
+      "actual": "rejected:wrong-signer",
+      "name": "tampered_message_expiry",
+      "pass": true
+    },
+    {
+      "actual": "accepted",
+      "name": "nonce_format_a",
+      "pass": true
+    },
+    {
+      "actual": "accepted",
+      "name": "nonce_format_nonce.with.d",
+      "pass": true
+    },
+    {
+      "actual": "accepted",
+      "name": "nonce_format_nonce:colon",
+      "pass": true
+    },
+    {
+      "actual": "accepted",
+      "name": "nonce_format_nonce_unders",
+      "pass": true
+    },
+    {
+      "actual": "accepted",
+      "name": "nonce_format_nonce-64-xxx",
+      "pass": true
+    },
+    {
+      "actual": "accepted",
+      "name": "baseline_no_nonce_replay",
+      "pass": true
+    },
+    {
+      "actual": "accepted",
+      "name": "baseline_origin_bypass",
+      "pass": true
+    },
+    {
+      "actual": {
+        "accepted": 1,
+        "rejected:nonce-consumed": 31
+      },
+      "name": "concurrency_32_one_success",
+      "pass": true
+    }
+  ],
+  "concurrency": [
+    "accepted",
+    "rejected:nonce-consumed",
+    "rejected:nonce-consumed",
+    "rejected:nonce-consumed",
+    "rejected:nonce-consumed",
+    "rejected:nonce-consumed",
+    "rejected:nonce-consumed",
+    "rejected:nonce-consumed",
+    "rejected:nonce-consumed",
+    "rejected:nonce-consumed",
+    "rejected:nonce-consumed",
+    "rejected:nonce-consumed",
+    "rejected:nonce-consumed",
+    "rejected:nonce-consumed",
+    "rejected:nonce-consumed",
+    "rejected:nonce-consumed",
+    "rejected:nonce-consumed",
+    "rejected:nonce-consumed",
+    "rejected:nonce-consumed",
+    "rejected:nonce-consumed",
+    "rejected:nonce-consumed",
+    "rejected:nonce-consumed",
+    "rejected:nonce-consumed",
+    "rejected:nonce-consumed",
+    "rejected:nonce-consumed",
+    "rejected:nonce-consumed",
+    "rejected:nonce-consumed",
+    "rejected:nonce-consumed",
+    "rejected:nonce-consumed",
+    "rejected:nonce-consumed",
+    "rejected:nonce-consumed",
+    "rejected:nonce-consumed"
+  ]
+}

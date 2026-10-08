@@ -1,0 +1,12 @@
+test_concurrent_exactly_one_success (test_signin.SigninSecurityTests.test_concurrent_exactly_one_success) ... ok
+test_evidence_results_have_canonical_order (test_signin.SigninSecurityTests.test_evidence_results_have_canonical_order) ... ok
+test_happy_path_and_nonce_consumption (test_signin.SigninSecurityTests.test_happy_path_and_nonce_consumption) ... ok
+test_malformed_signatures_rejected (test_signin.SigninSecurityTests.test_malformed_signatures_rejected) ... ok
+test_origin_expiry_and_boundaries (test_signin.SigninSecurityTests.test_origin_expiry_and_boundaries) ... ok
+test_vulnerable_baselines_are_rejected_by_security_suite (test_signin.SigninSecurityTests.test_vulnerable_baselines_are_rejected_by_security_suite) ... ok
+test_wrong_signer_rejected (test_signin.SigninSecurityTests.test_wrong_signer_rejected) ... ok
+
+----------------------------------------------------------------------
+Ran 7 tests in 22.895s
+
+OK

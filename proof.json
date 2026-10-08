@@ -1,0 +1,14 @@
+{
+  "schema_version": 1,
+  "bounty_uuid": "80c238e8-dd8c-4d0a-8f60-711142f1a496",
+  "escrow_id": 8,
+  "chain_id": 4663,
+  "repository": "https://github.com/Wisnuajie923/imdworks-wallet-signin-regression",
+  "repository_commit": "65d7b08b1e6b8b2b223e929d01651aaea1d4497a",
+  "artifact_url": "https://codeload.github.com/Wisnuajie923/imdworks-wallet-signin-regression/tar.gz/65d7b08b1e6b8b2b223e929d01651aaea1d4497a",
+  "artifact_sha256": "edd26a2c7216b33c0337d9e9f109f7260811122bf67d30152d7e01bce169cfbb",
+  "report_url": "https://raw.githubusercontent.com/Wisnuajie923/imdworks-wallet-signin-regression/65d7b08b1e6b8b2b223e929d01651aaea1d4497a/reports/final-report.json",
+  "report_sha256": "be136c6a9d81f6b37ff38a8bfda9efb7d842fcce782d3536f8e67fd3732ccec8",
+  "acceptance": "Verified locally with pinned evidence; see README and report.",
+  "limitations": "Local synthetic harness; no claim of Foundry/Anvil or production execution where unavailable."
+}
